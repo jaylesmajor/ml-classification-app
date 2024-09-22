@@ -7,8 +7,8 @@ import lime
 from lime.lime_tabular import LimeTabularExplainer
 import config
 
-from scripts.preprocessing import create_preprocessing_pipeline
-from scripts.categorical_encoder import categorical_encoder
+from src.preprocessing import create_preprocessing_pipeline
+from src.categorical_encoder import categorical_encoder
 
 # Define st_shap to embed SHAP plots in streamlit
 def st_shap(plot):
