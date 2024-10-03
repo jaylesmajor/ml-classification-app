@@ -40,7 +40,7 @@ def evaluate_model(model,X_train, y_train, X_test, y_test):
     axes[0].axis('off')
 
     # Second Axes
-    disp_train = ConfusionMatrixDisplay(confusion_matrix=cm_train)
+    disp_train = ConfusionMatrixDisplay(confusion_matrix=cm_test)
     disp_train.plot(ax=axes[1],cmap='Purples')
     axes[1].set_title('Confusion Matrix-Test Set ')
 
